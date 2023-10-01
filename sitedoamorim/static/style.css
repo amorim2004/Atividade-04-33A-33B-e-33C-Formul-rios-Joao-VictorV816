@@ -1,0 +1,27 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+.blue-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  font-family: 'Roboto Mono', monospace;
+}
+h2 {
+  font-family: 'Oswald&display', monospace;
+}
+table, th, td {
+  border: 1px solid;
+}
+table {
+  width: 100%;
+}
+table {
+  border-collapse: collapse;
+}
+td {
+  text-align: center;
+}

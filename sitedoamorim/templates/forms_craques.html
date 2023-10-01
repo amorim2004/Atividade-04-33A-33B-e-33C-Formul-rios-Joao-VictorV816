@@ -1,0 +1,34 @@
+<h1> {{ type }} Novo Jogador </h1>
+
+<form method='post'> 
+  {% csrf_token %}
+  <div>
+    <label>Nome:</label>
+    <input type='text' name='nome' value='{{ craque.nome }}'>
+  </div>
+  <div>
+    <label>Posição:</label>
+    <!-- <input name='posicao' value='{{ craque.posicao }}'> -->
+    <select name="posicao">
+      {% for opt in options_posicao %}
+        <option value="{{ opt.1 }}">{{ opt.1 }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div>
+    <label>Nº Gols:</label>
+    <input type='number' name='nGols' value='{{ craque.nGols }}'>
+  </div>
+  <div>
+    <label>Tipo De Contrato:</label>
+    <!-- <input name='tpDeContrato' value='{{ craque.tpDeContrato }}'> -->
+    <select name='tpDeContrato'>
+      {% for opt in options_tpDeContrato %}
+        <option value="{{ opt.1 }}">{{ opt.1 }}</option>
+      {% endfor %}
+    </select>
+  </div>
+
+  <input type='submit' value='Registrar'>
+</form>
+

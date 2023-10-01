@@ -1,0 +1,342 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="{% static 'style.css' %}" rel="stylesheet" type="text/css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="blue-center">
+  <h1> João Victor Miranda Araujo Baião Amorim</h1>
+  
+  <h2><strong> Principais notícias do Vasco da Gama</strong></h2> 
+
+  <p style="text-align: justify;">
+  Esse site tem por objetivo divulgar aos apoiadores do <b>Vasco da Gama</b> as últimas e principais notícias relacionadas ao clube, incluindo as <u>últimas contratações, próximos jogos, informações sobre os jogadores do elenco, prováveis escalações</u>, dentre outros assuntos relacionados ao gigante da colina.
+  </p>
+  </div>
+  <div class="blue-center">  
+  <div><img 
+src="data:image/png;base64,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" width="300">
+  <img 
+src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI1dpI9BygpYMFl8OKBVO_KkGsg5aeG5sXCQ&usqp=CAU" width="300"
+  </div>
+  <h2> <strong>Sites oficiais do Vasco da Gama </strong></h2>
+  <div class="blue-center">
+  <div><img
+src="data:image/jpeg;base64,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" width="300"></div>
+  </div>
+  <div>
+  <a href="https://vasco.com.br/" target="_blank">Site do Vasco </a>
+  </div>
+  <div>
+  <a href="https://sociogigante.com/" target="_blank"> Compra de ingressos dos jogos e sócio-torcedor </a>
+  </div>
+  
+  <h2> Melhores jogadores do vasco: </h2>
+  <!--ol>
+    <li>Dimitri Payet</li>
+    <li>Pablo Vegetti</li>
+    <li>Paulinho</li>
+    <li>Gabrie Pec</li>
+    <li>Jair</li>
+    <li>Leo</li>
+    <li>Leo Jardim</li>
+  </ol-->
+  <ol> 
+  {% for craque in craquesDoVasco %}
+    <li>
+      {{ craque.nome }} 
+      <a href='/craque/update/{{craque.id}}'> Atualizar </a> 
+      <a href='/craque/delete/{{craque.id}}'> Remover  </a>
+    </li>
+  {% endfor %}
+  </ol>
+<a href='/craque'>Adicionnar Novo Jogador </a>
+    
+  <h2> Contratações do Vasco nessa Janela de transferências</h2>
+  <!--ul>
+    <li>Dimitri Payet (meio campo/ ponta)</li>
+    <li>Pablo Vegetti (centroavante) </li>
+    <li>Paulinho (meio campo)</li>
+    <li>Serginho (atacante)</li>
+    <li>Medel (zagueiro)</li>
+    <li>Maicon (zagueiro)</li>
+    <li>Jefferson (lateral-esquerdo)</li>
+    <li>Praxedes (meio campo)</li>
+    <li>Sebástian Ferreira (atacante)</li>
+  </ul-->
+  <ul> 
+  {% for cont in contratacoesDoVasco %}
+    <li>{{ cont.nome }} 
+      <a href='/cont/update/{{cont.id}}'> Atualizar </a>
+      <a href='/cont/delete/{{cont.id}}'> Remover  </a>
+    </li>
+  {% endfor %}
+  </ul>
+  <a href='/cont'>Adicionnar Novo Jogador </a>
+
+    
+  <h2> Elenco disponível:</h2>
+  <table>
+  <tr>
+    <th>Jogador</th>
+    <th>Idade</th>
+    <th>Número</th>
+    <th>Posição</th>
+  </tr>
+  <tr>
+    <td>Léo Jardim</td>
+    <td>28</td>
+    <td>1</td>
+    <td>Goleiro</td>
+  </tr>
+  <tr>
+    <td>Ivan</td>
+    <td>25</td>
+    <td>97</td>
+    <td>Goleiro</td>
+  </tr>
+  <tr>
+    <td>Halls</td>
+    <td>24</td>
+    <td>24</td>
+    <td>Goleiro</td>
+  </tr>
+  <tr>
+    <td>Maicon</td>
+    <td>34</td>
+    <td>04</td>
+    <td>Zagueiro</td>
+  </tr>
+  <tr>
+    <td>Lyncon</td>
+    <td>18</td>
+    <td>33</td>
+    <td>Zagueiro</td>
+  </tr>
+  <tr>
+    <td>Robson</td>
+    <td>25</td>
+    <td>30</td>
+    <td>Zagueiro</td>  
+  </tr>
+  <tr>
+    <td>Capasso</td>
+    <td>27</td>
+    <td>22</td>
+    <td>Zagueiro</td>
+  </tr>
+  <tr>
+    <td>Léo</td>
+    <td>27</td>
+    <td>3</td>
+    <td>Zagueiro</td>
+  </tr>
+  <tr>
+    <td>Zé Vitor</td>
+    <td>21</td>
+    <td>44</td>
+    <td>Zagueiro</td>  
+  </tr>
+  <tr>
+    <td>Miranda</td>
+    <td>23</td>
+    <td>35</td>
+    <td>Zagueiro</td>  
+  </tr>
+  <tr>
+    <td>Puma Rodríguez</td>
+    <td>26</td>
+    <td>2</td>
+    <td>Lateral-Direito</td>
+  </tr>
+  <tr>  
+    <td>Paulo Henrique</td>
+    <td>26</td>
+    <td>96</td>
+    <td>Lateral-Direito</td>
+  </tr>
+  <tr>  
+    <td>Gabriel Dias</td>
+    <td>29</td>
+    <td>13</td>
+    <td>Lateral-Direito</td>
+  </tr>
+  <tr>  
+    <td>Paulinho</td>
+    <td>18</td>
+    <td>29</td>
+    <td>Lateral-Direito</td>
+  </tr>
+  <tr>  
+    <td>Jefferson</td>
+    <td>26</td>
+    <td>12</td>
+    <td>Lateral-Esquerdo</td>
+  </tr>
+  <tr>  
+    <td>Lucas Piton</td>
+    <td>22</td>
+    <td>6</td>
+    <td>Lateral-Esquerdo</td>
+  </tr>
+  <tr>  
+    <td>Riquelme</td>
+    <td>20</td>
+    <td>45</td>
+    <td>Lateral-Esquerdo</td>
+  </tr>
+  <tr>  
+    <td>Medel</td>
+    <td>35</td>
+    <td>17</td>
+    <td>Volante</td>
+  </tr>
+  <tr>  
+    <td>Mateus Carvalho</td>
+    <td>21</td>
+    <td>85</td>
+    <td>Volante</td>
+  </tr>
+  <tr>  
+    <td>De Lucca</td>
+    <td>23</td>
+    <td>5</td>
+    <td>Volante</td>
+  </tr>
+  <tr>  
+    <td>Barros</td>
+    <td>19</td>
+    <td>88</td>
+    <td>Volante</td>
+  </tr>
+  <tr>  
+    <td>Zé Gabriel</td>
+    <td>24</td>
+    <td>23</td>
+    <td>Volante</td>
+  </tr>
+  <tr>  
+    <td>Payet</td>
+    <td>36</td>
+    <td>10</td>
+    <td>Meio-Campista</td>
+  </tr>
+  <tr>  
+    <td>Praxedes</td>
+    <td>21</td>
+    <td>21</td>
+    <td>Meio-Campista</td>
+  </tr>
+  <tr>  
+    <td>Paulinho</td>
+    <td>26</td>
+    <td>18</td>
+    <td>Meio-Campista</td>
+  </tr>
+  <tr>  
+    <td>Carabajal</td>
+    <td>32</td>
+    <td>20</td>
+    <td>Meio-Campista</td>
+  </tr>
+  <tr>  
+    <td>Jair</td>
+    <td>28</td>
+    <td>8</td>
+    <td>Meio-Campista</td>
+  </tr>
+  <tr>  
+    <td>Galarza</td>
+    <td>21</td>
+    <td>19</td>
+    <td>Meio-Campista</td>
+  </tr>
+  <tr>  
+    <td>Marlon Gomes</td>
+    <td>19</td>
+    <td>25</td>
+    <td>Meio-Campista</td>
+  </tr>
+  <tr>  
+    <td>Rossi</td>
+    <td>30</td>
+    <td>31</td>
+    <td>Atacante</td>
+  </tr>
+  <tr>  
+    <td>Vegetti</td>
+    <td>34</td>
+    <td>99</td>
+    <td>Atacante</td>
+  </tr>
+  <tr>  
+    <td>Sebastian Ferreira</td>
+    <td>25</td>
+    <td>9</td>
+    <td>Atacante</td>
+  </tr>
+  <tr>  
+    <td>Serginho</td>
+    <td>28</td>
+    <td>70</td>
+    <td>Atacante</td>
+  </tr>
+  <tr>  
+    <td>Orellano</td>
+    <td>23</td>
+    <td>14</td>
+    <td>Atacante</td>
+  </tr>
+  <tr>  
+    <td>Alex Teixeira</td>
+    <td>33</td>
+    <td>7</td>
+    <td>Atacante</td>
+  </tr>
+  <tr>  
+    <td>Rayan</td>
+    <td>16</td>
+    <td>77</td>
+    <td>Atacante</td>
+  </tr>
+  <tr>  
+    <td>Gb</td>
+    <td>18</td>
+    <td>-</td>
+    <td>Atacante</td>
+  </tr>
+  <tr>  
+    <td>Erick Marcus</td>
+    <td>19</td>
+    <td>16</td>
+    <td>Atacante</td>
+  </tr>
+  <tr>  
+    <td>Figueiredo</td>
+    <td>22</td>
+    <td>15</td>
+    <td>Atacante</td>
+  </tr>
+  <tr>  
+    <td>Gabriel Pec</td>
+    <td>22</td>
+    <td>11</td>
+    <td>Atacante</td>
+  </tr>
+</table>
+</body>
+
+</html>

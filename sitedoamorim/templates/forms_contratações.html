@@ -1,0 +1,29 @@
+<h1> {{ type }} Novo Jogador </h1>
+
+<form method='post'> 
+  {% csrf_token %}
+  <div>
+    <label>Nome:</label>
+    <input type='text' name='nome' value='{{ cont.nome }}'>
+  </div>
+  <div>
+    <label>Posição:</label>
+    <!--<input name='posicao' value='{{ cont.posicao }}'>-->
+    <select name="posicao">
+      {% for opt in options_posicao %}
+        <option value="{{ opt.1 }}">{{ opt.1 }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  <div>
+    <label>De Onde Veio:</label>
+    <input type='text' name='deOndeVeio' value='{{ cont.deOndeVeio }}'>
+  </div>
+  <div>
+    <label>Valor:</label>
+    <input name='valor' value='{{ cont.valor }}'>
+  </div>
+
+  <input type='submit' value='Registrar'>
+</form>
+
